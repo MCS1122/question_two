@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>SignIn Form</title>
+</head>
+<body>
+    <div id="DivStyle">
+    <form id="form1" onsubmit="getFormValue(event)">
+        <label for="fname">First name:</label>
+        <input  required type="text" id="fname" name="firstname">
+        <br>
+        <label for="lname">Last name:</label>
+        <input required type="text" id="lname" name="lastname">
+        <br>
+        <!---->
+        <label for="Organization">Organization:</label>
+        <input type="text" id="Organization" name="Organization">
+        <br>
+        <label for="Email">Email address</label>
+        <input  required type="email" id="Email" name="Email">
+        <br>
+        <!---->
+        <label for="Work">Work Phone:</label>
+        <input type="text" id="Work" name="Work">
+        <br>
+        <label for="Home">Home Phone:</label>
+        <input type="text" id="Home" name="Home">
+        <br>
+        <label for="Cell">Cell Phone:</label>
+        <input type="text" id="Cell" name="Cell">
+        <!---->
+        <br>
+        <label for="fax">Fax:</label>
+        <input type="text" id="fax" name="fax">
+        <br>
+        <label for="address1">Address1:</label>
+        <input  required type="text" id="address1" name="address1">
+        <br>
+        <label for="address2">Address2:</label>
+        <input type="text" id="address2" name="address2">
+        <!---->
+        <br>
+        <label for="city">City:</label>
+        <input required type="text" id="city" name="city">
+        <br>
+        <label for="state">State Provice:</label>
+        <input type="text" id="state" name="state">
+        <br>
+        <label for="code">Zip Postal Code:</label>
+        <input type="text" id="code" name="code">
+        <br>
+        <label for="country">Country:</label>
+        <input required   type="text" id="country" name="country">
+        <!---->
+        <br>
+         <input type="submit" value="Submit" id="btn" />
+      </form> 
+      <script>
+        function getFormValue(e) {
+                e.preventDefault();
+                const firstName = document.getElementById("fname").value;
+                const lastName = document.getElementById("lname").value;
+                var Textshow = "Congratulations " +firstName +" "+ lastName +" you are now signed up";
+                alert(Textshow);
+        }
+      </script>
+    </div>
+</body>
+</html>
